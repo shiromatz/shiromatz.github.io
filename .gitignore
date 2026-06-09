@@ -1,0 +1,8 @@
+_site/
+docs/_site/
+.jekyll-cache/
+docs/.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/bundle/
+.claude/
