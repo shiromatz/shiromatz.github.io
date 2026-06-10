@@ -2,6 +2,7 @@
 layout: profile
 title: About | Shiro Matsumoto
 permalink: /about/
+description: Career, achievements, skills, certificates, and patents of Shiro Matsumoto, a data science and machine learning consultant with 25+ years of experience.
 ---
 
 <header class="hero reveal">

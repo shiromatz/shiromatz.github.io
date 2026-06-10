@@ -1,5 +1,6 @@
 remote_theme: jekyll/minima
 
+url: "https://shiromatz.com"
 title: Shiro Matsumoto
 subtitle: Data Science Consultant with 25+ Years of Experience
 
@@ -14,3 +15,4 @@ analytics:
 plugins:
 - jekyll-analytics
 - jekyll-remote-theme
+- jekyll-sitemap

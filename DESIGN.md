@@ -40,9 +40,10 @@ UIを変更する際は、まずここを読んでトークンとコンポーネ
 | `--text` | `#e9eef4` | 本文・主要テキスト |
 | `--muted` | `#9aa6b4` | 補助テキスト |
 | `--faint` | `#6b7686` | ラベル・注記 |
-| `--accent` | `#f2b441` | アクセント（琥珀） |
+| `--accent` | `#f2b441` | アクセント（琥珀）。背景/枠/装飾グリフ用 |
 | `--accent-2` | `#ffd27d` | アクセント明（ハイライト） |
 | `--accent-ink` | `#1a1206` | アクセント面上の文字色 |
+| `--accent-text` | `#f2b441` | **小ラベル/リンク文字**用（ライトで濃色に上書き） |
 
 ### Light（`prefers-color-scheme: light`）
 温かみのあるペーパー基調に切替。アクセントはコントラスト確保のため濃いめの琥珀。
@@ -54,6 +55,12 @@ UIを変更する際は、まずここを読んでトークンとコンポーネ
 | `--line` / `--line-soft` | `#e0d9c9` / `#ebe5d8` |
 | `--text` / `--muted` / `--faint` | `#1c1a16` / `#5d5648` / `#938b79` |
 | `--accent` / `--accent-2` / `--accent-ink` | `#b9791a` / `#8a5a10` / `#fffaf0` |
+| `--accent-text` | `#8a5410`（小文字テキストで約 5.5:1、AA 適合） |
+
+> **アクセントの使い分け**: 小サイズの**文字**（eyebrow / `section__no` / `card__tag` / `lang-pill` /
+> `source-link` / `tl__period` / ナビのアクティブ等）は `--accent-text` を使う。
+> 枠線・塗り・装飾グリフ（矢印 `→`、箇条書き `›`、タイムラインのノード等）は `--accent`。
+> ライトモードの琥珀は小文字だと約 3.2:1 で AA を割るため、文字用は必ず `--accent-text`。
 
 > 半透明の重ね合わせは `color-mix(in srgb, var(--accent) NN%, transparent)` で生成し、
 > テーマ追従を保つ。
@@ -76,6 +83,9 @@ Google Fonts から3書体（`display=swap`）。役割を厳密に分けて使�
   `text-transform: uppercase` + `letter-spacing: .1em〜.22em`
 - 役職名・引用的な一文は `--serif` の italic
 - 見出しサイズは `clamp()` で流動化（例: `hero__name` は `clamp(2.1rem, 7vw, 3.4rem)`）
+- ロードは **Fraunces（normal 400/600・italic 400）/ Public Sans（400/600）/ JetBrains Mono（400）** に限定。
+  italic は Google Fonts URL の `ital` 軸込みで読み込む（faux italic を出さない）。新ウェイトを使う時はURLにも追加する
+- Markdown 由来の見出し（例: Now ページ `## …`）は `.section-body h2/h3` の基底スタイルでセリフに揃う
 
 ---
 
@@ -105,7 +115,7 @@ Google Fonts から3書体（`display=swap`）。役割を厳密に分けて使�
 | `.lang-pill` | コンテンツの言語ラベル。`EN` / `JA` / `EN-JA` のいずれかを表示 |
 | `.home-links` / `.home-link` | トップページの説明付き導線。カードやボタンにせず、罫線リストとして控えめに見せる |
 | `.project-grid` / `.project-card` | Projects の実項目カード。カード全体がリンク。種別、右上の言語ラベル、英日説明を持つ |
-| `.article-grid` / `.article-card` | Writing の記事カード。カード全体がリンク。媒体、右上の言語ラベル、概要を持つ |
+| `.article-grid` / `.article-card` | Writing の記事カード。カード全体がリンク。上段に媒体・公開年月(`<time class="article-card__date">YYYY-MM`)・言語ラベル、その下に見出しと概要。`note` ブランドは `.article-card__source--brand` で小文字維持（uppercase しない） |
 | `.content-group__head` / `.source-link` | Writing の媒体見出しと著者ページリンク |
 | `.foot` | フッター（mono、小）。ページ下部の重複 Home リンクは置かない |
 
@@ -147,6 +157,8 @@ Google Fonts から3書体（`display=swap`）。役割を厳密に分けて使�
 - アイコンリンクは `aria-label`、装飾SVGは `aria-hidden="true"`
 - キーボード操作のため `:focus-visible` に琥珀のアウトライン
 - カラーはダーク/ライト両方で本文コントラストを確保（補助色は役割を色だけに依存させない）
+- **ナビの現在地/ホバーは「色だけ」に依存しない**：`.sitebar__nav a[aria-current=page]` は色＋下線で示す
+- 小ラベル文字は `--accent-text` を使い、ライトでも 4.5:1 以上を確保する
 
 ---
 
@@ -179,6 +191,12 @@ docs/
 - スタイルは `profile.css` に集約（`index.md` にインライン `<style>` を書かない）
 - ローカルの `_layouts/profile.html` は remote theme(minima) より優先されるため、
   ページ全体のHTMLを完全制御できる（サイトヘッダー/フッターの混入なし）
+
+### SEO / メタ
+- 各ページの front matter に `description:` を持たせ、`profile.html` が `<meta name=description>` /
+  OG / Twitter Card / `<link rel=canonical>` に展開する（`og:title` は `page.title`）。
+- `og:image` はプロフィール写真。絶対URL生成のため `_config.yml` に `url: "https://shiromatz.com"` が必要。
+- `jekyll-sitemap` で `sitemap.xml` を自動生成（GitHub Pages 既定許可プラグイン）。
 
 ---
 

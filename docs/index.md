@@ -1,6 +1,7 @@
 ---
 layout: profile
 title: Shiro Matsumoto
+description: Shiro Matsumoto — data science, machine learning, software, and writing. The public home base linking projects, writing, and about.
 ---
 
 <header class="hero hero--home reveal">
@@ -13,10 +14,6 @@ title: Shiro Matsumoto
 </header>
 
 <nav class="home-links reveal" aria-label="Site sections">
-  <a class="home-link" href="{{ '/' | relative_url }}">
-    <span class="home-link__label">Home</span>
-    <span class="home-link__text">The public home base for Shiro Matsumoto.</span>
-  </a>
   <a class="home-link" href="{{ '/projects/' | relative_url }}">
     <span class="home-link__label">Projects</span>
     <span class="home-link__text">Public services, software experiments, automation tools, and other work.</span>
