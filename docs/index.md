@@ -13,9 +13,9 @@ title: Shiro Matsumoto
 </header>
 
 <nav class="home-links reveal" aria-label="Site sections">
-  <a class="home-link" href="{{ '/about/' | relative_url }}">
-    <span class="home-link__label">About</span>
-    <span class="home-link__text">Career, achievements, skills, certificates, patents, languages, and education.</span>
+  <a class="home-link" href="{{ '/' | relative_url }}">
+    <span class="home-link__label">Home</span>
+    <span class="home-link__text">The public home base for Shiro Matsumoto.</span>
   </a>
   <a class="home-link" href="{{ '/projects/' | relative_url }}">
     <span class="home-link__label">Projects</span>
@@ -24,6 +24,14 @@ title: Shiro Matsumoto
   <a class="home-link" href="{{ '/writing/' | relative_url }}">
     <span class="home-link__label">Writing</span>
     <span class="home-link__text">English and Japanese posts across data science, software, work, and learning.</span>
+  </a>
+  <a class="home-link" href="{{ '/now/' | relative_url }}">
+    <span class="home-link__label">Now</span>
+    <span class="home-link__text">Current work, focus areas, and recent notes.</span>
+  </a>
+  <a class="home-link" href="{{ '/about/' | relative_url }}">
+    <span class="home-link__label">About</span>
+    <span class="home-link__text">Career, achievements, skills, certificates, patents, languages, and education.</span>
   </a>
 </nav>
 

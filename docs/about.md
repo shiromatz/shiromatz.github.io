@@ -6,7 +6,7 @@ permalink: /about/
 
 <header class="hero reveal">
   <div class="hero__photo">
-    <img src="img/profile-512.jpg" width="312" height="312" alt="Shiro Matsumoto" fetchpriority="high">
+    <img src="{{ '/img/profile-512.jpg' | relative_url }}" width="312" height="312" alt="Shiro Matsumoto" fetchpriority="high">
   </div>
   <div class="hero__text">
     <p class="hero__eyebrow">Data Science · Machine Learning</p>
