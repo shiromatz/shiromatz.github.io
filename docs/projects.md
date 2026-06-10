@@ -78,52 +78,6 @@ permalink: /projects/
   </div>
 </section>
 
-<section class="section reveal">
-  <div class="section__head">
-    <span class="section__no">02</span>
-    <h2 class="section__title">Categories</h2>
-  </div>
-  <div class="section-body route-grid">
-    <article class="route-card">
-      <span class="route-card__kicker">Data / ML</span>
-      <strong>Applied analytics and machine learning</strong>
-      <span>Forecasting, NLP, computer vision, explainability, and production-oriented data tools.</span>
-    </article>
-    <article class="route-card">
-      <span class="route-card__kicker">Web tools</span>
-      <strong>Public services and small apps</strong>
-      <span>Browser-based utilities, learning tools, and lightweight products.</span>
-    </article>
-    <article class="route-card">
-      <span class="route-card__kicker">Automation</span>
-      <strong>Workflow helpers</strong>
-      <span>Scripts, pipelines, integrations, and tools that reduce repeated manual work.</span>
-    </article>
-    <article class="route-card">
-      <span class="route-card__kicker">Personal</span>
-      <strong>Experiments and side projects</strong>
-      <span>Projects that may not fit a professional portfolio but still show interests and craft.</span>
-    </article>
-  </div>
-</section>
-
-<section class="section reveal">
-  <div class="section__head">
-    <span class="section__no">03</span>
-    <h2 class="section__title">Project Notes</h2>
-  </div>
-  <div class="section-body cards cards--compact">
-    <article class="card">
-      <span class="card__tag">Format</span>
-      <p>Each public item should eventually include a short description, role, stack, link, and language label where relevant.</p>
-    </article>
-    <article class="card">
-      <span class="card__tag">Language</span>
-      <p>Projects can be <span class="lang-pill">EN</span>, <span class="lang-pill">JA</span>, or bilingual. Translation is optional when the original context is clear.</p>
-    </article>
-  </div>
-</section>
-
 <footer class="foot reveal">
   <span>© Shiro Matsumoto</span>
   <span><a href="{{ '/' | relative_url }}">Home</a></span>

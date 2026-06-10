@@ -31,21 +31,11 @@ permalink: /ja/
       <strong>記事・ノート</strong>
       <span>英語・日本語の記事、メモ、外部投稿へのリンク。</span>
     </a>
-    <a class="route-card" href="{{ '/now/' | relative_url }}">
-      <span class="route-card__kicker">Now</span>
-      <strong>近況・関心</strong>
-      <span>仕事・専門に限らない最近の関心や活動。</span>
+    <a class="route-card" href="https://note.com/shiro_ma" target="_blank" rel="noopener">
+      <span class="route-card__kicker">note</span>
+      <strong>note 著者ページ</strong>
+      <span>日本語の記事、制作物の紹介、分析メモなど。</span>
     </a>
-  </div>
-</section>
-
-<section class="section reveal">
-  <div class="section__head">
-    <span class="section__no">02</span>
-    <h2 class="section__title">運用方針</h2>
-  </div>
-  <div class="section-body">
-    <p class="lead">トップページや主要プロフィールは英語中心に置きつつ、日本語で読みたい人のための入口を用意します。記事や制作物は原文の言語を尊重し、必要に応じて短い補足説明を付けます。</p>
   </div>
 </section>
 

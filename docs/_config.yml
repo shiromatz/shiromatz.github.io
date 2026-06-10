@@ -1,4 +1,3 @@
-#remote_theme: pages-themes/slate@v0.2.0
 remote_theme: jekyll/minima
 
 title: Shiro Matsumoto
@@ -14,11 +13,4 @@ analytics:
 
 plugins:
 - jekyll-analytics
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-
-#minima:
-#  social_links:
-#    - { platform: linkedin,  user_url: "https://www.linkedin.com/in/srmtmt/" }
-#    - { platform: medium, user_url: "https://medium.com/@shrmtmt" }
-#    - { platform: facebook,  user_url: "https://www.facebook.com/shiromatz" }
-#    - { platform: twitter, user_url: "https://twitter.com/shrmtmt" }
+- jekyll-remote-theme

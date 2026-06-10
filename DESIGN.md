@@ -83,15 +83,17 @@ Google Fonts から3書体（`display=swap`）。役割を厳密に分けて使�
 
 - コンテナ最大幅 `--maxw: 860px`、中央寄せ。パディングは `clamp()` で可変
 - 角丸の基準 `--r: 14px`
+- 共通ヘッダー `.sitebar` は帯のみ viewport 幅いっぱいに伸ばし、内側のリンク位置を本文幅に揃える
 - セクションは `section.section` 単位。見出しは `.section__head`（`.section__no` 連番 + `.section__title`）
 - 縦リズムはセクション間マージン `clamp(44px, 8vw, 76px)` と下線で作る（`<hr>` は使わない）
 
 ### 主要コンポーネント
 | クラス | 役割 |
 |---|---|
-| `.hero` | 写真 + 名前 + 肩書 + 紹介 + メタ（位置 / ソーシャル）。2カラム→680px以下で1カラム |
+| `.hero` | About などの写真 + 名前 + 肩書 + 紹介 + メタ。2カラム→680px以下で1カラム |
+| `.hero--home` | トップページ用の写真なしヒーロー。名前・肩書・短い紹介のみ |
 | `.stats` / `.stat` | 統計バンド（4値）。`stat__num span` を琥珀に。380px以下で1カラム |
-| `.cards` / `.card` | 実績カード。左の琥珀レール（`::before`）+ `.card__tag` + 本文。hoverで右へ4px |
+| `.cards` / `.card` | 実績カード。左の琥珀レール（`::before`）+ `.card__tag` + 本文。非リンクカードなのでhover移動は付けない |
 | `.timeline` / `.tl` | 経歴の縦タイムライン。`.tl--now` は発光ノード（現職） |
 | `.skillset` / `.skillgrp` / `.tags` / `.tag` | スキルのグループ別ピル。`.tag--strong` は主力（濃ボーダー）、`.tag em` は年数（mono） |
 | `.linklist` (`--tight`) | 資格・特許の縦リンク列。hoverで左インデント |
@@ -99,12 +101,14 @@ Google Fonts から3書体（`display=swap`）。役割を厳密に分けて使�
 | `.list` | `›`(琥珀)始まりの素朴な箇条書き |
 | `.duo` | 短いセクションの2カラム（Languages / Education） |
 | `.lang-pill` | コンテンツの言語ラベル。`EN` / `JA` / `EN-JA` のいずれかを表示 |
+| `.home-links` / `.home-link` | トップページの説明付き導線。カードやボタンにせず、罫線リストとして控えめに見せる |
 | `.project-grid` / `.project-card` | Projects の実項目カード。言語ラベル、種別、タイトルリンク、英日説明を持つ |
+| `.article-grid` / `.article-card` | Writing の記事カード。媒体、タイトル直リンク、概要、右上の言語ラベルを持つ |
 | `.foot` | フッター（mono、小） |
 
 ### コンテンツと言語ラベル
 
-`Projects` / `Writing` / `Now` など、英語・日本語のコンテンツが混在する一覧では、
+`Projects` / `Writing` など、英語・日本語のコンテンツが混在する一覧では、
 各項目に言語ラベルを付ける。完全翻訳を前提にせず、原文言語を明示して整理する。
 
 使用する表記は以下に統一する。
@@ -118,6 +122,7 @@ Google Fonts から3書体（`display=swap`）。役割を厳密に分けて使�
 規約:
 - `JP` / `JPN` / `Bilingual` など、別表記を混在させない
 - ラベルは項目タイトルまたはメタ情報の近くに置き、一覧をスキャンした時に分かるようにする
+- Writing の記事カードでは `.article-card__top` の右上に `.lang-pill` を置く
 - スタイルは `.lang-pill` を使う
 - 片方の言語しかないことを欠点に見せない。必要ならもう一方の言語で1行説明を添える
 

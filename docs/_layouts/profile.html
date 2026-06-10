@@ -33,12 +33,12 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="grain" aria-hidden="true"></div>
   <header class="sitebar">
-    <a class="sitebar__brand" href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Shiro Matsumoto</a>
+    <span class="sitebar__brand">Shiro Matsumoto</span>
     <nav class="sitebar__nav" aria-label="Primary navigation">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
       <a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}aria-current="page"{% endif %}>About</a>
       <a href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
       <a href="{{ '/writing/' | relative_url }}" {% if page.url == '/writing/' %}aria-current="page"{% endif %}>Writing</a>
-      <a href="{{ '/now/' | relative_url }}" {% if page.url == '/now/' %}aria-current="page"{% endif %}>Now</a>
       <a href="{{ '/ja/' | relative_url }}" {% if page.url == '/ja/' %}aria-current="page"{% endif %}>日本語</a>
     </nav>
   </header>

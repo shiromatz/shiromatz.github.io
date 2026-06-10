@@ -47,7 +47,7 @@ permalink: /about/
   </div>
   <div class="stat">
     <div class="stat__num">#1<span></span></div>
-    <div class="stat__label">Market Share Led · JP</div>
+    <div class="stat__label">Industry-Leading Client</div>
   </div>
   <div class="stat">
     <div class="stat__num">4<span></span></div>
