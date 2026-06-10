@@ -2,6 +2,7 @@
 layout: profile
 title: Projects | Shiro Matsumoto
 permalink: /projects/
+description: Public services, tools, and experiments by Shiro Matsumoto — web tools, an Android app, open datasets, and more.
 ---
 
 <header class="pagelead reveal">
@@ -10,7 +11,7 @@ permalink: /projects/
   <p class="hero__intro">A home for public services, tools, experiments, and other work. Items can be data-science related or not; the point is to collect things that are useful, inspectable, or representative.</p>
 </header>
 
-<section class="section section--plain reveal" aria-label="Projects">
+<section class="section reveal" aria-label="Projects">
   <div class="project-grid">
     <a class="project-card" href="https://www.toefl-speaking.app/" target="_blank" rel="noopener">
       <div class="project-card__meta">
