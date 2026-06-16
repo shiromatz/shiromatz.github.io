@@ -53,13 +53,13 @@ description: A short personal introduction to Shiro Matsumoto — places, trails
     <h2 class="section__title">Elsewhere</h2>
   </div>
   <ul class="section-body linklist linklist--tight">
-    <li><a href="https://github.com/shrmtmt" target="_blank" rel="noopener"><span class="arr">→</span> GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/shiro-matsumoto/" target="_blank" rel="noopener"><span class="arr">→</span> LinkedIn</a></li>
-    <li><a href="https://medium.com/@shrmtmt" target="_blank" rel="noopener"><span class="arr">→</span> Medium</a></li>
-    <li><a href="https://note.com/shiro_ma" target="_blank" rel="noopener"><span class="arr">→</span> note <span class="lang-pill">JA</span></a></li>
-    <li><a href="https://www.yamareco.com/modules/yamareco/userinfo-35876-prof.html" target="_blank" rel="noopener"><span class="arr">→</span> Yamareco <span class="lang-pill">JA</span></a></li>
-    <li><a href="https://www.facebook.com/shiromatz" target="_blank" rel="noopener"><span class="arr">→</span> Facebook</a></li>
-    <li><a href="https://x.com/shrmtmt" target="_blank" rel="noopener"><span class="arr">→</span> X</a></li>
+    <li><a href="https://github.com/shrmtmt" target="_blank" rel="noopener"><span class="arr">→</span><span class="linklist__body"><span class="linklist__title">GitHub</span><span class="linklist__desc">Code, experiments, and small public tools.</span></span></a></li>
+    <li><a href="https://www.linkedin.com/in/shiro-matsumoto/" target="_blank" rel="noopener"><span class="arr">→</span><span class="linklist__body"><span class="linklist__title">LinkedIn</span><span class="linklist__desc">Professional profile and contact.</span></span></a></li>
+    <li><a href="https://medium.com/@shrmtmt" target="_blank" rel="noopener"><span class="arr">→</span><span class="linklist__body"><span class="linklist__title">Medium</span><span class="linklist__desc">English articles on data science, machine learning, and software.</span></span></a></li>
+    <li><a href="https://note.com/shiro_ma" target="_blank" rel="noopener"><span class="arr">→</span><span class="linklist__body"><span class="linklist__title">note <span class="lang-pill">JA</span></span><span class="linklist__desc">Japanese notes and essays.</span></span></a></li>
+    <li><a href="https://www.yamareco.com/modules/yamareco/userinfo-35876-prof.html" target="_blank" rel="noopener"><span class="arr">→</span><span class="linklist__body"><span class="linklist__title">Yamareco <span class="lang-pill">JA</span></span><span class="linklist__desc">Mountain trip logs and route records.</span></span></a></li>
+    <li><a href="https://www.facebook.com/shiromatz" target="_blank" rel="noopener"><span class="arr">→</span><span class="linklist__body"><span class="linklist__title">Facebook</span><span class="linklist__desc">Personal updates and social posts.</span></span></a></li>
+    <li><a href="https://x.com/shrmtmt" target="_blank" rel="noopener"><span class="arr">→</span><span class="linklist__body"><span class="linklist__title">X</span><span class="linklist__desc">Short notes, links, and quick updates.</span></span></a></li>
   </ul>
 </section>
 
