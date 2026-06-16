@@ -1,0 +1,130 @@
+body {
+  color: #20252b;
+}
+
+.home-hub {
+  border-bottom: 1px solid #dfe5ea;
+  margin-bottom: 2rem;
+  padding: 2.5rem 0 2rem;
+}
+
+.home-hub h1 {
+  font-size: 2.1rem;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.home-lead,
+.standfirst {
+  color: #47515c;
+  font-size: 1.18rem;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+.eyebrow {
+  color: #2f6f73;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.home-section {
+  margin: 2rem 0;
+}
+
+.link-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  margin-top: 1.25rem;
+}
+
+.link-card {
+  background: #ffffff;
+  border: 1px solid #dfe5ea;
+  border-radius: 8px;
+  color: #243447;
+  display: block;
+  font-weight: 700;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.link-card:hover,
+.link-card:focus {
+  border-color: #2f6f73;
+  text-decoration: none;
+}
+
+.link-card span {
+  color: #5d6874;
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.45;
+  margin-top: 0.35rem;
+}
+
+.social-links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  display: inline-flex;
+}
+
+.social-links img {
+  height: 32px;
+  transition: transform 0.2s ease;
+  width: 32px;
+}
+
+.social-links a:hover img,
+.social-links a:focus img {
+  transform: scale(1.12);
+}
+
+.about-profile,
+.cv-profile {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.profile-image {
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(32, 37, 43, 0.14);
+  height: 128px;
+  object-fit: cover;
+  width: 128px;
+}
+
+.author-illustration {
+  background: #ffffff;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.cv-profile p {
+  flex: 1 1 260px;
+  margin-bottom: 0;
+}
+
+.cv-nav {
+  color: #65717d;
+  font-size: 0.95rem;
+}
+
+.cv-nav span {
+  margin: 0 0.35rem;
+}
