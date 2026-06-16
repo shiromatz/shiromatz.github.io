@@ -3,6 +3,10 @@ remote_theme: jekyll/minima
 
 title: Shiro Matsumoto
 subtitle: Data Science Consultant with 25+ Years of Experience
+lang: en
+
+header_pages:
+- about.md
 
 # Analytics
 google_analytics: G-S8JJLWE1JX
