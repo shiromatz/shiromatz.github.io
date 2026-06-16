@@ -56,6 +56,8 @@ description: A short personal introduction to Shiro Matsumoto — places, trails
     <li><a href="https://github.com/shrmtmt" target="_blank" rel="noopener"><span class="arr">→</span> GitHub</a></li>
     <li><a href="https://www.linkedin.com/in/shiro-matsumoto/" target="_blank" rel="noopener"><span class="arr">→</span> LinkedIn</a></li>
     <li><a href="https://medium.com/@shrmtmt" target="_blank" rel="noopener"><span class="arr">→</span> Medium</a></li>
+    <li><a href="https://note.com/shiro_ma" target="_blank" rel="noopener"><span class="arr">→</span> note <span class="lang-pill">JA</span></a></li>
+    <li><a href="https://www.yamareco.com/modules/yamareco/userinfo-35876-prof.html" target="_blank" rel="noopener"><span class="arr">→</span> Yamareco <span class="lang-pill">JA</span></a></li>
     <li><a href="https://www.facebook.com/shiromatz" target="_blank" rel="noopener"><span class="arr">→</span> Facebook</a></li>
     <li><a href="https://x.com/shrmtmt" target="_blank" rel="noopener"><span class="arr">→</span> X</a></li>
   </ul>
