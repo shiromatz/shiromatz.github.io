@@ -19,7 +19,7 @@ sitemap: false
     <div class="hero__meta">
       <span class="locchip">Washington&nbsp;D.C. · Tokyo</span>
       <a class="source-link" href="{{ '/' | relative_url }}">Top</a>
-      <a class="source-link" href="{{ '/about/' | relative_url }}">About author</a>
+      <a class="source-link" href="{{ '/about/' | relative_url }}">A Little About Me</a>
     </div>
   </div>
 </header>
@@ -184,5 +184,5 @@ sitemap: false
 
 <footer class="foot reveal">
   <span>© Shiro Matsumoto</span>
-  <span><a href="{{ '/' | relative_url }}">Top</a> · <a href="{{ '/about/' | relative_url }}">About author</a></span>
+  <span><a href="{{ '/' | relative_url }}">Top</a> · <a href="{{ '/about/' | relative_url }}">A Little About Me</a></span>
 </footer>
