@@ -1,61 +1,37 @@
 ---
-layout: default
+layout: profile
+title: Shiro Matsumoto
+description: Shiro Matsumoto's personal website — a small public hub for profiles, writing, projects, notes, and ways to get in touch.
 ---
 
-<section class="home-hub">
-  <p class="eyebrow">Personal website</p>
-  <h1>Shiro Matsumoto's home on the web</h1>
-  <p class="home-lead">
-    A small hub for profile links, writing, and notes around data science,
-    machine learning, and practical analytics.
-  </p>
-</section>
-
-<section class="home-section">
-  <h2>What is here</h2>
-  <p>
-    This site keeps the public-facing pieces of my online presence in one
-    place. It points to a short author profile, selected writing, code, and
-    ways to get in touch.
-  </p>
-
-  <nav class="link-grid" aria-label="Site links">
-    <a class="link-card" href="{{ '/about/' | relative_url }}">
-      About author
-      <span>Who I am and what I tend to work on.</span>
-    </a>
-    <a class="link-card" href="https://medium.com/@shrmtmt">
-      Writing
-      <span>Notes and articles on data, machine learning, and related topics.</span>
-    </a>
-    <a class="link-card" href="https://github.com/shrmtmt">
-      Code
-      <span>Public repositories, experiments, and small tools.</span>
-    </a>
-    <a class="link-card" href="https://www.linkedin.com/in/shiro-matsumoto/">
-      Professional profile
-      <span>Current work context and contact through LinkedIn.</span>
-    </a>
-  </nav>
-</section>
-
-<section class="home-section">
-  <h2>Elsewhere</h2>
-  <div class="social-links">
-    <a href="https://github.com/shrmtmt" aria-label="GitHub">
-      <img src="{{ '/img/github-icon.png' | relative_url }}" width="32" height="32" alt="">
-    </a>
-    <a href="https://www.linkedin.com/in/shiro-matsumoto/" aria-label="LinkedIn">
-      <img src="{{ '/img/linkedin-icon.png' | relative_url }}" width="32" height="32" alt="">
-    </a>
-    <a href="https://medium.com/@shrmtmt" aria-label="Medium">
-      <img src="{{ '/img/medium-icon.png' | relative_url }}" width="32" height="32" alt="">
-    </a>
-    <a href="https://www.facebook.com/shiromatz" aria-label="Facebook">
-      <img src="{{ '/img/facebook-icon.png' | relative_url }}" width="32" height="32" alt="">
-    </a>
-    <a href="https://x.com/shrmtmt" aria-label="X">
-      <img src="{{ '/img/x-icon.png' | relative_url }}" width="32" height="32" alt="">
-    </a>
+<header class="hero hero--home reveal">
+  <div class="hero__text">
+    <p class="hero__eyebrow">Personal Website</p>
+    <h1 class="hero__name">Shiro Matsumoto's home on the web</h1>
+    <p class="hero__role">Profiles, writing, projects, and notes.</p>
+    <p class="hero__intro">This site is a small public hub for my online presence: a short author profile, selected projects, writing, current notes, and ways to find me elsewhere.</p>
   </div>
-</section>
+</header>
+
+<nav class="home-links reveal" aria-label="Site sections">
+  <a class="home-link" href="{{ '/about/' | relative_url }}">
+    <span class="home-link__label">About Author</span>
+    <span class="home-link__text">A short personal introduction: places, trails, running, and recent DIY interests.</span>
+  </a>
+  <a class="home-link" href="{{ '/projects/' | relative_url }}">
+    <span class="home-link__label">Projects</span>
+    <span class="home-link__text">Public services, software experiments, automation tools, and other work.</span>
+  </a>
+  <a class="home-link" href="{{ '/writing/' | relative_url }}">
+    <span class="home-link__label">Writing</span>
+    <span class="home-link__text">English and Japanese posts across data science, software, work, and learning.</span>
+  </a>
+  <a class="home-link" href="{{ '/now/' | relative_url }}">
+    <span class="home-link__label">Now</span>
+    <span class="home-link__text">Current focus areas and recent notes.</span>
+  </a>
+</nav>
+
+<footer class="foot reveal">
+  <span>© Shiro Matsumoto</span>
+</footer>

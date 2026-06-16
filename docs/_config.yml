@@ -1,12 +1,9 @@
-#remote_theme: pages-themes/slate@v0.2.0
 remote_theme: jekyll/minima
 
+url: "https://shiromatz.com"
 title: Shiro Matsumoto
 subtitle: Data Science Consultant with 25+ Years of Experience
 lang: en
-
-header_pages:
-- about.md
 
 # Analytics
 google_analytics: G-S8JJLWE1JX
@@ -18,11 +15,5 @@ analytics:
 
 plugins:
 - jekyll-analytics
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-
-#minima:
-#  social_links:
-#    - { platform: linkedin,  user_url: "https://www.linkedin.com/in/srmtmt/" }
-#    - { platform: medium, user_url: "https://medium.com/@shrmtmt" }
-#    - { platform: facebook,  user_url: "https://www.facebook.com/shiromatz" }
-#    - { platform: twitter, user_url: "https://twitter.com/shrmtmt" }
+- jekyll-remote-theme
+- jekyll-sitemap
