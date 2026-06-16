@@ -1,6 +1,6 @@
 ---
 layout: profile
-title: About Author | Shiro Matsumoto
+title: A Little About Me | Shiro Matsumoto
 permalink: /about/
 description: A short personal introduction to Shiro Matsumoto — places, trails, running, and current DIY interests.
 ---
@@ -10,7 +10,7 @@ description: A short personal introduction to Shiro Matsumoto — places, trails
     <img src="{{ '/img/waving-hand.png' | relative_url }}" width="256" height="256" alt="Illustration of a person waving" fetchpriority="high">
   </div>
   <div class="hero__text">
-    <p class="hero__eyebrow">About Author</p>
+    <p class="hero__eyebrow">A Little About Me</p>
     <h1 class="hero__name">Shiro Matsumoto</h1>
     <p class="hero__role">Hiker, runner, and maker.</p>
     <p class="hero__intro">I was born in Yokohama, Japan. I have lived in Kyoto, Kawasaki, Ota City, Setagaya, and other places, and I am currently based in Washington, DC.</p>
