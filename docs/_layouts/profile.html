@@ -30,33 +30,27 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/profile.css' | relative_url }}">
 
-  {% if site.google_analytics %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '{{ site.google_analytics }}');
-  </script>
-  {% endif %}
+  <script defer src="{{ '/assets/js/analytics-country.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/js/analytics.js' | relative_url }}" data-country-url="{{ site.analytics_country_url | escape }}"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="grain" aria-hidden="true"></div>
   <header class="sitebar">
     <div class="sitebar__inner">
-      <a class="sitebar__brand" href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Shiro Matsumoto</a>
+      <a data-analytics-link="home" class="sitebar__brand" href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Shiro Matsumoto</a>
       <nav class="sitebar__nav" aria-label="Primary navigation">
-        <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
-        <a href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
-        <a href="{{ '/writing/' | relative_url }}" {% if page.url == '/writing/' %}aria-current="page"{% endif %}>Writing</a>
-        <a href="{{ '/now/' | relative_url }}" {% if page.url == '/now/' %}aria-current="page"{% endif %}>Now</a>
-        <a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}aria-current="page"{% endif %}>About</a>
+        <a data-analytics-link="home" href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+        <a data-analytics-link="projects" href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
+        <a data-analytics-link="writing" href="{{ '/writing/' | relative_url }}" {% if page.url == '/writing/' %}aria-current="page"{% endif %}>Writing</a>
+        <a data-analytics-link="now" href="{{ '/now/' | relative_url }}" {% if page.url == '/now/' %}aria-current="page"{% endif %}>Now</a>
+        <a data-analytics-link="about" href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}aria-current="page"{% endif %}>About</a>
       </nav>
     </div>
   </header>
   <main id="main" class="page">
     {{ content }}
+    <p class="privacy-link"><a href="{{ '/privacy/' | relative_url }}" data-analytics-link="privacy">Privacy / プライバシー</a></p>
   </main>
 </body>
 </html>

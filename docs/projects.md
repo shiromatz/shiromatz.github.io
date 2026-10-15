@@ -13,7 +13,7 @@ description: Public services, tools, and experiments by Shiro Matsumoto — web 
 
 <section class="section reveal" aria-label="Projects">
   <div class="project-grid">
-    <a class="project-card" href="https://www.toefl-speaking.app/" target="_blank" rel="noopener">
+    <a class="project-card" href="https://www.toefl-speaking.app/" data-analytics-link="toefl-speaking" target="_blank" rel="noopener">
       <div class="project-card__meta">
         <span class="project-card__kind">Web tool</span>
         <span class="lang-pill">EN-JA</span>
@@ -25,7 +25,7 @@ description: Public services, tools, and experiments by Shiro Matsumoto — web 
       </div>
     </a>
 
-    <a class="project-card" href="https://shiromatz.com/pmp-processes-interactive-map/" target="_blank" rel="noopener">
+    <a class="project-card" href="https://shiromatz.com/pmp-processes-interactive-map/" data-analytics-link="pmp-explorer" target="_blank" rel="noopener">
       <div class="project-card__meta">
         <span class="project-card__kind">Interactive map</span>
         <span class="lang-pill">EN-JA</span>
@@ -37,7 +37,7 @@ description: Public services, tools, and experiments by Shiro Matsumoto — web 
       </div>
     </a>
 
-    <a class="project-card" href="https://tablega.me/" target="_blank" rel="noopener">
+    <a class="project-card" href="https://tablega.me/" data-analytics-link="tablegame" target="_blank" rel="noopener">
       <div class="project-card__meta">
         <span class="project-card__kind">Game platform</span>
         <span class="lang-pill">EN-JA</span>
@@ -49,7 +49,7 @@ description: Public services, tools, and experiments by Shiro Matsumoto — web 
       </div>
     </a>
 
-    <a class="project-card" href="https://github.com/shiromatz/android-interval-timer-camera" target="_blank" rel="noopener">
+    <a class="project-card" href="https://github.com/shiromatz/android-interval-timer-camera" data-analytics-link="interval-camera" target="_blank" rel="noopener">
       <div class="project-card__meta">
         <span class="project-card__kind">Android app</span>
         <span class="lang-pill">EN-JA</span>
@@ -61,7 +61,7 @@ description: Public services, tools, and experiments by Shiro Matsumoto — web 
       </div>
     </a>
 
-    <a class="project-card" href="https://github.com/shiromatz/Japan-Meteorological-Agency-Weather-Forecast" target="_blank" rel="noopener">
+    <a class="project-card" href="https://github.com/shiromatz/Japan-Meteorological-Agency-Weather-Forecast" data-analytics-link="weather-archive" target="_blank" rel="noopener">
       <div class="project-card__meta">
         <span class="project-card__kind">Open dataset</span>
         <span class="lang-pill">EN-JA</span>
