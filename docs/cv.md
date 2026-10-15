@@ -18,8 +18,8 @@ sitemap: false
     <p class="hero__intro">Independent data science consultant based in Washington, D.C. and Tokyo, with more than two decades of experience in data analysis, data science, and machine learning.</p>
     <div class="hero__meta">
       <span class="locchip">Washington&nbsp;D.C. · Tokyo</span>
-      <a class="source-link" href="{{ '/' | relative_url }}">Top</a>
-      <a class="source-link" href="{{ '/about/' | relative_url }}">A Little About Me</a>
+      <a data-analytics-link="home" class="source-link" href="{{ '/' | relative_url }}">Top</a>
+      <a data-analytics-link="about" class="source-link" href="{{ '/about/' | relative_url }}">A Little About Me</a>
     </div>
   </div>
 </header>
@@ -184,5 +184,5 @@ sitemap: false
 
 <footer class="foot reveal">
   <span>© Shiro Matsumoto</span>
-  <span><a href="{{ '/' | relative_url }}">Top</a> · <a href="{{ '/about/' | relative_url }}">A Little About Me</a></span>
+  <span><a data-analytics-link="home" href="{{ '/' | relative_url }}">Top</a> · <a data-analytics-link="about" href="{{ '/about/' | relative_url }}">A Little About Me</a></span>
 </footer>

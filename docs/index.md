@@ -14,19 +14,19 @@ description: Shiro Matsumoto's personal website — a small public hub for profi
 </header>
 
 <nav class="home-links reveal" aria-label="Site sections">
-  <a class="home-link" href="{{ '/about/' | relative_url }}">
+  <a data-analytics-link="about" class="home-link" href="{{ '/about/' | relative_url }}">
     <span class="home-link__label">A Little About Me</span>
     <span class="home-link__text">A short personal introduction: places, trails, running, and recent DIY interests.</span>
   </a>
-  <a class="home-link" href="{{ '/projects/' | relative_url }}">
+  <a data-analytics-link="projects" class="home-link" href="{{ '/projects/' | relative_url }}">
     <span class="home-link__label">Projects</span>
     <span class="home-link__text">Public services, software experiments, automation tools, and other work.</span>
   </a>
-  <a class="home-link" href="{{ '/writing/' | relative_url }}">
+  <a data-analytics-link="writing" class="home-link" href="{{ '/writing/' | relative_url }}">
     <span class="home-link__label">Writing</span>
     <span class="home-link__text">English and Japanese posts across data science, software, work, and learning.</span>
   </a>
-  <a class="home-link" href="{{ '/now/' | relative_url }}">
+  <a data-analytics-link="now" class="home-link" href="{{ '/now/' | relative_url }}">
     <span class="home-link__label">Now</span>
     <span class="home-link__text">Current focus areas and recent notes.</span>
   </a>

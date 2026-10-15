@@ -715,6 +715,14 @@ strong { font-weight: 600; color: var(--text); }
 .duo { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 6vw, 56px); }
 
 /* footer */
+.privacy-title span { display: inline-block; }
+
+.privacy-link {
+  margin: 1rem 0 0;
+  font-size: .8rem;
+  color: var(--muted);
+}
+
 .foot {
   margin-top: clamp(50px, 9vw, 84px);
   padding-top: 1.4rem;
