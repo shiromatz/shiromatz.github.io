@@ -1,9 +1,35 @@
 {
   "project_id": 665552,
   "service_id": "shiromatz-profile",
-  "status": "dashboard_created_site_not_published",
+  "status": "production_verified",
   "dashboard_id": 2216368,
   "dashboard_url": "https://us.posthog.com/project/665552/dashboard/2216368",
+  "production_verification": {
+    "date": "2026-10-15",
+    "profile_runtime_commit": "c137531f549b950172a4d8e8d5ba505ea08710ab",
+    "profile_pr": "https://github.com/shiromatz/shiromatz.github.io/pull/2",
+    "pages_built_at_utc": "2026-10-15T20:11:10Z",
+    "country_commit": "09d6edb923edf0d7fb44a082e9baad851396bb1b",
+    "country_pr": "https://github.com/shiromatz/shiromatz-country/pull/1",
+    "country_endpoint": "https://shiromatz-country.vercel.app/analytics-country.json",
+    "country_project_id": "prj_U5XlGxEDHJAGEJdGlAk1Xfny363q",
+    "country_deployment_id": "dpl_EJuPuBm4kU8No85HZjjM6wXKDtMd",
+    "country_release_method": "cli_from_reviewed_main",
+    "country_git_autodeploy_connected": false,
+    "browser_checks_passed": 10,
+    "all_seven_saved_queries_passed": true,
+    "query_warnings": null,
+    "intentional_production_smoke": {
+      "attempts": 2,
+      "stored_window_utc": ["2026-10-15T20:13:00Z", "2026-10-15T20:16:00Z"],
+      "pageviews": 8,
+      "link_clicks": 10,
+      "access_country_code": "US",
+      "access_country_name": "United States",
+      "organic_usage": false,
+      "note": "The first observer could not read Chromium beacon bodies. The corrected driver passed; all events from both attempts were confirmed stored. No production code correction or event deletion was needed."
+    }
+  },
   "insights": [
     {
       "name": "shiromatz.com｜日次ページ閲覧数",

@@ -1,4 +1,6 @@
-# Proposed publication scope
+# Approved publication scope
+
+Status: completed on 2026-10-15. This is the approved plan retained as a record; actual PRs, deployment commits, verification outcomes and the manual country-service deployment limitation are recorded in `posthog-migration.md` and `posthog-dashboard.json`. The later permission for direct Production verification supersedes the Preview steps below.
 
 The user explicitly approved this publication scope on 2026-10-15: create the independent repository/project, commit and push only this task's changes, review PRs, merge to main, publish, and verify real country detection, stored PostHog events and the service dashboard. TOEFL Speaking, tablega.me and the subscription must remain unchanged.
 
@@ -7,8 +9,8 @@ The user subsequently authorized verifying this small country endpoint directly 
 ## Country service
 
 - Local source: `C:/Users/shiro/dev/shiromatz-country`, branch `codex/initial-country-service`.
-- Proposed new public GitHub repository: `shiromatz/shiromatz-country`.
-- Proposed new Vercel project: `shiromatz-country`, team `team_BEUmvu4hlWovY5YbAbbY998l` (existing shiromatz team). No billing, DNS, Firebase or existing application settings are changed.
+- New public GitHub repository: `shiromatz/shiromatz-country`.
+- New Vercel project: `shiromatz-country`, team `team_BEUmvu4hlWovY5YbAbbY998l` (existing shiromatz team). No billing, DNS, Firebase or existing application settings are changed.
 - Commit/push this source only. If the new repository needs a main base before its first PR, initialize an empty release base, then review the implementation in a PR. Link the new Vercel project to this repository, verify a dedicated protected Preview and inspect all PR comments/reviews/unresolved threads before main publication.
 - Verify the actual assigned endpoint URL before putting it into the profile site's `analytics_country_url`. The proposed default hostname is not reserved yet.
 - Acceptance requires real normal/warm-cache and forged-header HEAD checks, country-only output, no cookies, no IP/city/coordinates, exact CORS origin/exposed header, and a real browser request from the profile origin. Keep failures as Unknown and never disable Deployment Protection to test.
