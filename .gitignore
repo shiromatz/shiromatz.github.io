@@ -6,3 +6,5 @@ docs/.jekyll-cache/
 .bundle/
 vendor/bundle/
 .claude/
+output/
+.playwright-cli/
