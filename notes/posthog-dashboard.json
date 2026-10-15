@@ -1,0 +1,448 @@
+{
+  "project_id": 665552,
+  "service_id": "shiromatz-profile",
+  "status": "dashboard_created_site_not_published",
+  "dashboard_id": 2216368,
+  "dashboard_url": "https://us.posthog.com/project/665552/dashboard/2216368",
+  "insights": [
+    {
+      "name": "shiromatz.com｜日次ページ閲覧数",
+      "description": "ページ閲覧イベントの延べ件数。人数ではありません。",
+      "query": {
+        "kind": "TrendsQuery",
+        "dateRange": {
+          "date_from": "-30d"
+        },
+        "interval": "day",
+        "filterTestAccounts": false,
+        "properties": [
+          {
+            "key": "service_id",
+            "type": "event",
+            "operator": "exact",
+            "value": [
+              "shiromatz-profile"
+            ]
+          },
+          {
+            "key": "environment",
+            "type": "event",
+            "operator": "exact",
+            "value": [
+              "production"
+            ]
+          }
+        ],
+        "series": [
+          {
+            "kind": "EventsNode",
+            "event": "$pageview",
+            "math": "total"
+          }
+        ],
+        "trendsFilter": {
+          "display": "ActionsLineGraph",
+          "showLegend": true
+        }
+      },
+      "layout": {
+        "sm": {
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 5
+        }
+      },
+      "publication": {
+        "name": "shiromatz.com｜日次ページ閲覧数",
+        "id": 12917120,
+        "short_id": "CSaDm1um",
+        "tile_id": 13681145
+      }
+    },
+    {
+      "name": "shiromatz.com｜日次リンククリック数",
+      "description": "指定した主要リンクのクリックイベントの延べ件数。遷移先での利用・連絡完了を示すものではありません。",
+      "query": {
+        "kind": "TrendsQuery",
+        "dateRange": {
+          "date_from": "-30d"
+        },
+        "interval": "day",
+        "filterTestAccounts": false,
+        "properties": [
+          {
+            "key": "service_id",
+            "type": "event",
+            "operator": "exact",
+            "value": [
+              "shiromatz-profile"
+            ]
+          },
+          {
+            "key": "environment",
+            "type": "event",
+            "operator": "exact",
+            "value": [
+              "production"
+            ]
+          }
+        ],
+        "series": [
+          {
+            "kind": "EventsNode",
+            "event": "profile_link_clicked",
+            "math": "total"
+          }
+        ],
+        "trendsFilter": {
+          "display": "ActionsLineGraph",
+          "showLegend": true
+        }
+      },
+      "layout": {
+        "sm": {
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 5
+        }
+      },
+      "publication": {
+        "name": "shiromatz.com｜日次リンククリック数",
+        "id": 12917121,
+        "short_id": "C3zqL9AK",
+        "tile_id": 13681146
+      }
+    },
+    {
+      "name": "shiromatz.com｜ページ別の閲覧",
+      "description": "閲覧したプロフィールサイト内のページ別件数。別リポジトリのプロジェクトサイトは含みません。",
+      "query": {
+        "kind": "TrendsQuery",
+        "dateRange": {
+          "date_from": "-30d"
+        },
+        "interval": "day",
+        "filterTestAccounts": false,
+        "properties": [
+          {
+            "key": "service_id",
+            "type": "event",
+            "operator": "exact",
+            "value": [
+              "shiromatz-profile"
+            ]
+          },
+          {
+            "key": "environment",
+            "type": "event",
+            "operator": "exact",
+            "value": [
+              "production"
+            ]
+          }
+        ],
+        "series": [
+          {
+            "kind": "EventsNode",
+            "event": "$pageview",
+            "math": "total"
+          }
+        ],
+        "breakdownFilter": {
+          "breakdowns": [
+            {
+              "property": "page_id",
+              "type": "event"
+            }
+          ],
+          "breakdown_limit": 100
+        },
+        "trendsFilter": {
+          "display": "ActionsTable",
+          "showLegend": false
+        }
+      },
+      "layout": {
+        "sm": {
+          "x": 0,
+          "y": 5,
+          "w": 6,
+          "h": 5
+        }
+      },
+      "publication": {
+        "name": "shiromatz.com｜ページ別の閲覧",
+        "id": 12917122,
+        "short_id": "hEsmuR13",
+        "tile_id": 13681147
+      }
+    },
+    {
+      "name": "shiromatz.com｜流入元別の閲覧",
+      "description": "参照元のホスト名別の閲覧件数。internalはサイト内の移動、direct_or_unknownは参照元不明を含みます。検索語・参照元ページの内容は収集しません。",
+      "query": {
+        "kind": "TrendsQuery",
+        "dateRange": {
+          "date_from": "-30d"
+        },
+        "interval": "day",
+        "filterTestAccounts": false,
+        "properties": [
+          {
+            "key": "service_id",
+            "type": "event",
+            "operator": "exact",
+            "value": [
+              "shiromatz-profile"
+            ]
+          },
+          {
+            "key": "environment",
+            "type": "event",
+            "operator": "exact",
+            "value": [
+              "production"
+            ]
+          }
+        ],
+        "series": [
+          {
+            "kind": "EventsNode",
+            "event": "$pageview",
+            "math": "total"
+          }
+        ],
+        "breakdownFilter": {
+          "breakdowns": [
+            {
+              "property": "referrer_host",
+              "type": "event"
+            }
+          ],
+          "breakdown_limit": 100
+        },
+        "trendsFilter": {
+          "display": "ActionsTable",
+          "showLegend": false
+        }
+      },
+      "layout": {
+        "sm": {
+          "x": 6,
+          "y": 5,
+          "w": 6,
+          "h": 5
+        }
+      },
+      "publication": {
+        "name": "shiromatz.com｜流入元別の閲覧",
+        "id": 12917123,
+        "short_id": "C1cxzADx",
+        "tile_id": 13681148
+      }
+    },
+    {
+      "name": "shiromatz.com｜国別の閲覧・クリック",
+      "description": "IPから推定した国別の延べ閲覧数と主要リンククリック数。VPN等で実際の所在地と異なることがあります。Unknownは国を取得できなかったイベントです。人数ではありません。",
+      "query": {
+        "kind": "TrendsQuery",
+        "dateRange": {
+          "date_from": "-30d"
+        },
+        "interval": "day",
+        "filterTestAccounts": false,
+        "properties": [
+          {
+            "key": "service_id",
+            "type": "event",
+            "operator": "exact",
+            "value": [
+              "shiromatz-profile"
+            ]
+          },
+          {
+            "key": "environment",
+            "type": "event",
+            "operator": "exact",
+            "value": [
+              "production"
+            ]
+          }
+        ],
+        "series": [
+          {
+            "kind": "EventsNode",
+            "event": "$pageview",
+            "math": "total"
+          },
+          {
+            "kind": "EventsNode",
+            "event": "profile_link_clicked",
+            "math": "total"
+          }
+        ],
+        "breakdownFilter": {
+          "breakdowns": [
+            {
+              "property": "access_country_name",
+              "type": "event"
+            }
+          ],
+          "breakdown_limit": 300
+        },
+        "trendsFilter": {
+          "display": "ActionsTable",
+          "showLegend": false
+        }
+      },
+      "layout": {
+        "sm": {
+          "x": 0,
+          "y": 10,
+          "w": 12,
+          "h": 6
+        }
+      },
+      "publication": {
+        "name": "shiromatz.com｜国別の閲覧・クリック",
+        "id": 12917124,
+        "short_id": "wQzQiTyv",
+        "tile_id": 13681149
+      }
+    },
+    {
+      "name": "shiromatz.com｜主要リンク別のクリック",
+      "description": "リンク分類と固定のリンク識別子別の延べクリック数。プロジェクト・記事・プロフィール／連絡先・ナビゲーションを区別します。",
+      "query": {
+        "kind": "TrendsQuery",
+        "dateRange": {
+          "date_from": "-30d"
+        },
+        "interval": "day",
+        "filterTestAccounts": false,
+        "properties": [
+          {
+            "key": "service_id",
+            "type": "event",
+            "operator": "exact",
+            "value": [
+              "shiromatz-profile"
+            ]
+          },
+          {
+            "key": "environment",
+            "type": "event",
+            "operator": "exact",
+            "value": [
+              "production"
+            ]
+          }
+        ],
+        "series": [
+          {
+            "kind": "EventsNode",
+            "event": "profile_link_clicked",
+            "math": "total"
+          }
+        ],
+        "breakdownFilter": {
+          "breakdowns": [
+            {
+              "property": "link_group",
+              "type": "event"
+            },
+            {
+              "property": "link_id",
+              "type": "event"
+            }
+          ],
+          "breakdown_limit": 100
+        },
+        "trendsFilter": {
+          "display": "ActionsTable",
+          "showLegend": false
+        }
+      },
+      "layout": {
+        "sm": {
+          "x": 0,
+          "y": 16,
+          "w": 12,
+          "h": 7
+        }
+      },
+      "publication": {
+        "name": "shiromatz.com｜主要リンク別のクリック",
+        "id": 12917125,
+        "short_id": "pVCfa0Xm",
+        "tile_id": 13681150
+      }
+    },
+    {
+      "name": "shiromatz.com｜クリック元ページ",
+      "description": "主要リンクがクリックされた時点の閲覧ページ別件数。遷移先ページの閲覧数とは別の集計です。",
+      "query": {
+        "kind": "TrendsQuery",
+        "dateRange": {
+          "date_from": "-30d"
+        },
+        "interval": "day",
+        "filterTestAccounts": false,
+        "properties": [
+          {
+            "key": "service_id",
+            "type": "event",
+            "operator": "exact",
+            "value": [
+              "shiromatz-profile"
+            ]
+          },
+          {
+            "key": "environment",
+            "type": "event",
+            "operator": "exact",
+            "value": [
+              "production"
+            ]
+          }
+        ],
+        "series": [
+          {
+            "kind": "EventsNode",
+            "event": "profile_link_clicked",
+            "math": "total"
+          }
+        ],
+        "breakdownFilter": {
+          "breakdowns": [
+            {
+              "property": "page_id",
+              "type": "event"
+            }
+          ],
+          "breakdown_limit": 100
+        },
+        "trendsFilter": {
+          "display": "ActionsTable",
+          "showLegend": false
+        }
+      },
+      "layout": {
+        "sm": {
+          "x": 0,
+          "y": 23,
+          "w": 12,
+          "h": 5
+        }
+      },
+      "publication": {
+        "name": "shiromatz.com｜クリック元ページ",
+        "id": 12917126,
+        "short_id": "ylIzkSfW",
+        "tile_id": 13681152
+      }
+    }
+  ]
+}
