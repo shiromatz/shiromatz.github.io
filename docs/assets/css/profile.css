@@ -560,7 +560,7 @@ a.article-card:hover::after {
 
 .section-body { color: var(--muted); }
 
-/* Markdown-authored content (e.g. Now page) inherits the design system */
+/* Markdown-authored content inherits the design system */
 .section-body h2,
 .section-body h3 {
   font-family: var(--serif);

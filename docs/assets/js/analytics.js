@@ -4,7 +4,7 @@
   const script = document.currentScript;
   const SDK_URL = new URL("../vendor/posthog-js-1.438.10.mjs", script.src).href;
   const pages = { "/": "home", "/index.html": "home", "/about/": "about", "/projects/": "projects",
-    "/writing/": "writing", "/now/": "now", "/cv/": "cv", "/privacy/": "privacy" };
+    "/writing/": "writing", "/cv/": "cv", "/privacy/": "privacy" };
   const pageId = Object.hasOwn(pages, location.pathname) ? pages[location.pathname] : null;
   // Other project sites hosted below shiromatz.com have their own analytics policy.
   if (location.protocol !== "https:" || location.hostname !== "shiromatz.com" || location.port || !pageId) return;
@@ -23,7 +23,7 @@
 
   const links = Object.freeze({
     "home": "navigation", "about": "navigation", "projects": "navigation", "writing": "navigation",
-    "now": "navigation", "cv": "navigation", "privacy": "navigation",
+    "cv": "navigation", "privacy": "navigation",
     "toefl-speaking": "project", "pmp-explorer": "project", "tablegame": "project",
     "interval-camera": "project", "weather-archive": "project",
     "medium-skewed-words": "article", "medium-mc-dropout": "article", "medium-two-oods": "article",

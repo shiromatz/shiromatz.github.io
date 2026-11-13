@@ -107,7 +107,7 @@ async (page) => {
   await p.setViewportSize({width:390,height:844});
   check(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'mobile privacy has no horizontal overflow');
   await p.screenshot({path:'output/playwright/privacy-mobile.png',fullPage:true});
-  for (const path of ['now','cv','writing','about','projects']) {
+  for (const path of ['cv','writing','about','projects']) {
     await p.goto(`https://shiromatz.com/${path}/`); await settle();
     check(captured.at(-1).properties.page_id===path, path+' page identified');
     check(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),path+' mobile layout has no overflow');

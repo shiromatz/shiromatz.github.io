@@ -85,7 +85,7 @@ Google Fonts から3書体（`display=swap`）。役割を厳密に分けて使�
 - 見出しサイズは `clamp()` で流動化（例: `hero__name` は `clamp(2.1rem, 7vw, 3.4rem)`）
 - ロードは **Fraunces（normal 400/600・italic 400）/ Public Sans（400/600）/ JetBrains Mono（400）** に限定。
   italic は Google Fonts URL の `ital` 軸込みで読み込む（faux italic を出さない）。新ウェイトを使う時はURLにも追加する
-- Markdown 由来の見出し（例: Now ページ `## …`）は `.section-body h2/h3` の基底スタイルでセリフに揃う
+- Markdown 由来の見出しは `.section-body h2/h3` の基底スタイルでセリフに揃う
 
 ---
 
@@ -94,7 +94,7 @@ Google Fonts から3書体（`display=swap`）。役割を厳密に分けて使�
 - コンテナ最大幅 `--maxw: 860px`、中央寄せ。パディングは `clamp()` で可変
 - 角丸の基準 `--r: 14px`
 - 共通ヘッダー `.sitebar` は帯のみ viewport 幅いっぱいに伸ばし、`.sitebar__inner` で内側のリンク位置を本文幅に揃える
-- 共通ヘッダーとトップページ導線の順序は `Home` / `Projects` / `Writing` / `Now` / `About` に固定する
+- 共通ヘッダーとトップページ導線の順序は `Home` / `Projects` / `Writing` / `About` に固定する
 - 短いページと長いページで中央位置がずれないよう、`html` に `overflow-y: scroll` と `scrollbar-gutter: stable` を指定する
 - セクションは `section.section` 単位。見出しは `.section__head`（`.section__no` 連番 + `.section__title`）
 - 縦リズムはセクション間マージン `clamp(44px, 8vw, 76px)` と下線で作る（`<hr>` は使わない）
@@ -183,7 +183,6 @@ docs/
 ├── assets/css/
 │   └── profile.css          # デザインシステム本体（トークン+コンポーネント）
 ├── index.md                 # layout: profile。本文はセマンティックHTML
-├── now.md                   # /now/ の近況ページ。必要に応じて短く更新する
 ├── favicon.svg / favicon.png / apple-touch-icon.png
 └── img/profile-512.jpg
 ```
