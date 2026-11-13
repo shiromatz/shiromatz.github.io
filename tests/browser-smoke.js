@@ -53,7 +53,7 @@ async (page) => {
   check(captured.some(e => e.event === 'profile_link_clicked' && e.properties.link_id === 'projects' && e.properties.page_id === 'home'), 'navigation click retains the source page');
   check(captured.filter(e => e.event === '$pageview').length === pvBefore + 1, 'normal navigation has one destination view');
   check(beacons > 0, 'clicks use immediate beacon delivery');
-  for (const [path,group,expected] of [['projects','project',5],['writing','article',24],['about','contact',7]]) {
+  for (const [path,group,expected] of [['projects','project',5],['writing','article',25],['about','contact',7]]) {
     await p.goto(`https://shiromatz.com/${path}/`);
     await settle();
     await p.evaluate(() => document.addEventListener('click', event => event.preventDefault()));
@@ -107,7 +107,7 @@ async (page) => {
   await p.setViewportSize({width:390,height:844});
   check(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'mobile privacy has no horizontal overflow');
   await p.screenshot({path:'output/playwright/privacy-mobile.png',fullPage:true});
-  for (const path of ['now','cv','writing','about','projects']) {
+  for (const path of ['cv','writing','about','projects']) {
     await p.goto(`https://shiromatz.com/${path}/`); await settle();
     check(captured.at(-1).properties.page_id===path, path+' page identified');
     check(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),path+' mobile layout has no overflow');

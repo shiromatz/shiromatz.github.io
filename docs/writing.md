@@ -17,6 +17,15 @@ description: Articles and notes by Shiro Matsumoto on hiking, software projects,
     <a class="source-link" href="https://note.com/shiro_ma" data-analytics-link="note-profile" target="_blank" rel="noopener">著者ページ</a>
   </div>
   <div class="article-grid">
+    <a class="article-card" href="https://note.com/shiro_ma/n/n6b1798018679" data-analytics-link="note-unit-converter" target="_blank" rel="noopener">
+      <div class="article-card__top">
+        <span class="article-card__source article-card__source--brand">note</span>
+        <span class="article-card__when"><time class="article-card__date" datetime="2026-11">2026-11</time><span class="lang-pill">JA</span></span>
+      </div>
+      <h3>単位変換ツールは山ほどあるのに、欲しいものが見つからない。なので、作りました</h3>
+      <p>自作した単位変換ツールの紹介。ペースや燃費、複合単位・分数インチの変換、履歴機能、PWAでの利用方法を説明。</p>
+    </a>
+
     <article class="article-card">
       <div class="article-card__top">
         <span class="article-card__source article-card__source--brand">note</span>
