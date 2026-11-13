@@ -25,7 +25,7 @@
     "home": "navigation", "about": "navigation", "projects": "navigation", "writing": "navigation",
     "cv": "navigation", "privacy": "navigation",
     "toefl-speaking": "project", "pmp-explorer": "project", "tablegame": "project",
-    "interval-camera": "project", "weather-archive": "project",
+    "interval-camera": "project", "weather-archive": "project", "unit-converter": "project",
     "medium-skewed-words": "article", "medium-mc-dropout": "article", "medium-two-oods": "article",
     "medium-quantile-loss": "article", "medium-factor-analysis": "article", "medium-r-colab": "article",
     "medium-cyclic-encoding": "article", "medium-multicollinearity": "article", "medium-ant-problem": "article",

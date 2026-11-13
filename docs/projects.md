@@ -13,6 +13,18 @@ description: Public services, tools, and experiments by Shiro Matsumoto — web 
 
 <section class="section reveal" aria-label="Projects">
   <div class="project-grid">
+    <a class="project-card" href="https://convert-unit.vercel.app/" data-analytics-link="unit-converter" target="_blank" rel="noopener">
+      <div class="project-card__meta">
+        <span class="project-card__kind">Web tool</span>
+        <span class="lang-pill">EN-JA</span>
+      </div>
+      <h2>Unit Converter</h2>
+      <div class="project-card__body">
+        <p>A free, ad-free unit converter for pace, fuel economy, feet-and-inches measurements, and fractional inches, with conversion history, saved unit pairs, and PWA installation.</p>
+        <p>ペース・燃費・フィート＋インチ・分数インチなどを変換できる、無料・広告なしの単位変換ツール。変換履歴、単位ペアの保存、PWAとしてのインストールに対応。</p>
+      </div>
+    </a>
+
     <a class="project-card" href="https://www.toefl-speaking.app/" data-analytics-link="toefl-speaking" target="_blank" rel="noopener">
       <div class="project-card__meta">
         <span class="project-card__kind">Web tool</span>
