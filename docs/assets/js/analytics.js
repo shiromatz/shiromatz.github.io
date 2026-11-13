@@ -32,6 +32,9 @@
     "medium-hypothesis-tests": "article", "note-weather-warnings": "article", "note-toefl-speaking": "article",
     "note-anki": "article", "note-hypothesis-tests": "article", "note-weather-archive": "article",
     "note-weather-analysis": "article", "note-terms": "article",
+    "note-jmt-2025-part1": "article", "note-jmt-2025-part2": "article", "note-jmt-2025-part3": "article",
+    "note-three-sisters": "article", "note-yellowstone-thorofare": "article",
+    "note-teton-crest": "article", "note-tablegame": "article",
     "github-profile": "contact", "linkedin-profile": "contact", "medium-profile": "contact",
     "note-profile": "contact", "yamareco-profile": "contact", "facebook-profile": "contact", "x-profile": "contact",
   });

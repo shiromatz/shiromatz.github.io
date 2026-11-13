@@ -53,7 +53,7 @@ description: A short personal introduction to Shiro Matsumoto — places, trails
     <h2 class="section__title">Elsewhere</h2>
   </div>
   <ul class="section-body linklist linklist--tight">
-    <li><a href="https://github.com/shrmtmt" data-analytics-link="github-profile" target="_blank" rel="noopener"><span class="arr">→</span><span class="linklist__body"><span class="linklist__title">GitHub</span><span class="linklist__desc">Code, experiments, and small public tools.</span></span></a></li>
+    <li><a href="https://github.com/shiromatz" data-analytics-link="github-profile" target="_blank" rel="noopener"><span class="arr">→</span><span class="linklist__body"><span class="linklist__title">GitHub</span><span class="linklist__desc">Code, experiments, and small public tools.</span></span></a></li>
     <li><a href="https://www.linkedin.com/in/shiro-matsumoto/" data-analytics-link="linkedin-profile" target="_blank" rel="noopener"><span class="arr">→</span><span class="linklist__body"><span class="linklist__title">LinkedIn</span><span class="linklist__desc">Professional profile and contact.</span></span></a></li>
     <li><a href="https://medium.com/@shrmtmt" data-analytics-link="medium-profile" target="_blank" rel="noopener"><span class="arr">→</span><span class="linklist__body"><span class="linklist__title">Medium</span><span class="linklist__desc">English articles on data science, machine learning, and software.</span></span></a></li>
     <li><a href="https://note.com/shiro_ma" data-analytics-link="note-profile" target="_blank" rel="noopener"><span class="arr">→</span><span class="linklist__body"><span class="linklist__title">note <span class="lang-pill">JA</span></span><span class="linklist__desc">Japanese notes and essays.</span></span></a></li>
